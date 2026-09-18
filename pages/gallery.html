@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Dokumentasi — Kopken Holic</title>
+  <meta name="description" content="Galeri dokumentasi Kopken Holic — kumpulan momen nugas, ngopi, dan kebersamaan di Kopi Kenangan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar__logo">Kopken <span>Holic</span></a>
+      <div class="navbar__links">
+        <a href="../index.html#tentang">Tentang</a>
+        <a href="../index.html#alasan">Kenapa</a>
+        <a href="../index.html#menu">Menu</a>
+        <a href="gallery.html" class="is-active">Galeri</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Hero -->
+  <header class="gallery-hero">
+    <div class="container">
+      <div class="gallery-hero__eyebrow">Dokumentasi Komunitas</div>
+      <h1 class="gallery-hero__title">Galeri <em>Kopken Holic</em></h1>
+      <p class="gallery-hero__subtitle">
+        Semua momen — dari sesi nugas sampai ngopi santai — kami dokumentasikan di sini. Harmonis dengan cerita di halaman utama.
+      </p>
+      <div class="gallery-hero__hint">
+        <span>💡</span> Tip: klik foto untuk preview • filter kategori di bawah
+      </div>
+
+      <div class="gallery-filter" role="tablist" aria-label="Filter kategori galeri">
+        <button class="gallery-filter__btn is-active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+        <button class="gallery-filter__btn" data-filter="nugas" role="tab">Nugas Bareng</button>
+        <button class="gallery-filter__btn" data-filter="ngopi" role="tab">Ngopi & Menu</button>
+        <button class="gallery-filter__btn" data-filter="event" role="tab">Event & Hangout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-section__head">
+        <div>
+          <div class="section-label">Koleksi Foto</div>
+          <h2 class="section-title" style="margin-bottom:6px;">Dokumentasi Terbaru</h2>
+          <p class="section-desc">Dummy dulu — tinggal ganti <code>src</code> gambar di bawah dengan foto kamu. Ukuran ideal 800×600.</p>
+        </div>
+        <div class="gallery-count" id="galleryCount">Menampilkan 9 foto</div>
+      </div>
+
+      <div class="doc-grid" id="docGrid">
+
+        <!-- ============ NUGAS ============ -->
+        <!-- CARA GANTI GAMBAR: ubah atribut src di tag <img> di bawah ini.
+             Contoh: <img src="../assets/foto-nugas-1.jpg" alt="..."> 
+             Letakkan file fotomu di folder assets/ lalu sesuaikan path-nya. -->
+        <figure class="doc-card" data-category="nugas">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken1/800/600" alt="Sesi nugas bareng di Kopi Kenangan" loading="lazy">
+            <span class="doc-card__badge">Nugas Bareng</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Sesi Nugas Bareng #1</h3>
+            <p class="doc-card__meta">12 Jan 2026 • Outlet Kenangan Blok M</p>
+            <p class="doc-card__desc">Mengerjakan tugas akhir bareng sampai kedai tutup. Kopi Kenangan Mantan jadi penyelamat.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="nugas">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken2/800/600" alt="Belajar kelompok" loading="lazy">
+            <span class="doc-card__badge">Nugas Bareng</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Belajar Kelompok UTS</h3>
+            <p class="doc-card__meta">28 Jan 2026 • Outlet Kenangan Senayan</p>
+            <p class="doc-card__desc">H-2 UTS, semua materi dibahas tuntas. Meja penuh catatan dan gelas kosong.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="nugas">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken3/800/600" alt="Laptop dan kopi di meja" loading="lazy">
+            <span class="doc-card__badge">Nugas Bareng</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Deadline Mode On</h3>
+            <p class="doc-card__meta">05 Feb 2026 • Outlet Kenangan Kuningan</p>
+            <p class="doc-card__desc">Laptop, charger, dan Americano — paket lengkap ngejar deadline skripsi.</p>
+          </figcaption>
+        </figure>
+
+        <!-- ============ NGOPI & MENU ============ -->
+        <figure class="doc-card" data-category="ngopi">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken4/800/600" alt="Foto menu Kopi Kenangan Mantan" loading="lazy">
+            <span class="doc-card__badge">Ngopi & Menu</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Menu Favorit: Kopi Kenangan Mantan</h3>
+            <p class="doc-card__meta">10 Feb 2026 • Flatlay Menu</p>
+            <p class="doc-card__desc">Gula aren-nya pas, kopinya nendang. Paling sering dipesan anggota.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="ngopi">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken5/800/600" alt="Thai Tea dan latte" loading="lazy">
+            <span class="doc-card__badge">Ngopi & Menu</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Icip Menu Baru</h3>
+            <p class="doc-card__meta">14 Feb 2026 • Outlet Kenangan FX</p>
+            <p class="doc-card__desc">Nyobain Thai Tea Kenangan dan Hazelnut Latte sekaligus. Wajib foto dulu.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="ngopi">
+          <div class="doc-card__thumb">
+            <!-- CONTOH PLACEHOLDER JIKA BELUM ADA FOTO: hapus <img> dan pakai div placeholder di bawah -->
+            <!--
+            <div class="doc-card__placeholder">
+              <div class="doc-card__placeholder-inner">
+                <strong>Belum ada foto</strong>
+                Upload fotomu dengan mengganti<br>src pada tag &lt;img&gt;
+              </div>
+            </div>
+            -->
+            <img src="https://picsum.photos/seed/kopken6/800/600" alt="Barista meracik kopi" loading="lazy">
+            <span class="doc-card__badge">Ngopi & Menu</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Behind the Bar</h3>
+            <p class="doc-card__meta">18 Feb 2026 • Bar Kopi Kenangan</p>
+            <p class="doc-card__desc">Ngintip barista ngeracik pesanan — proses yang bikin ngopi makin nikmat.</p>
+          </figcaption>
+        </figure>
+
+        <!-- ============ EVENT & HANGOUT ============ -->
+        <figure class="doc-card" data-category="event">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken7/800/600" alt="Foto komunitas ngumpul" loading="lazy">
+            <span class="doc-card__badge">Event & Hangout</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Meetup Bulanan #4</h3>
+            <p class="doc-card__meta">22 Feb 2026 • Kopi Kenangan Kota Kasablanka</p>
+            <p class="doc-card__desc">Ngumpul 20+ anggota, sharing session + tukar referensi skripsi.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="event">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken8/800/600" alt="Foto polaroid komunitas" loading="lazy">
+            <span class="doc-card__badge">Event & Hangout</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Foto Polaroid Bareng</h3>
+            <p class="doc-card__meta">01 Mar 2026 • Outlet Kenangan Pusat</p>
+            <p class="doc-card__desc">Tradisi tiap meetup: cetak polaroid dan tempel di mading outlet.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="doc-card" data-category="event">
+          <div class="doc-card__thumb">
+            <img src="https://picsum.photos/seed/kopken9/800/600" alt="Hangout malam" loading="lazy">
+            <span class="doc-card__badge">Event & Hangout</span>
+          </div>
+          <figcaption class="doc-card__body">
+            <h3 class="doc-card__title">Ngopi Malam Minggu</h3>
+            <p class="doc-card__meta">08 Mar 2026 • Outlet Kenangan Tebet</p>
+            <p class="doc-card__desc">Tidak ada agenda, cuma ngobrol santai ditemani kopi dan camilan.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <!-- Panduan upload untuk kamu -->
+      <div class="upload-guide">
+        <div>
+          <div class="upload-guide__title">Cara upload foto kamu sendiri</div>
+          <p class="upload-guide__desc">
+            1. Simpan foto ke folder <code>assets/</code> (buat foldernya jika belum ada).<br>
+            2. Buka <code>pages/gallery.html</code> → cari komentar <code>&lt;!-- GANTI GAMBAR --&gt;</code>.<br>
+            3. Ganti <code>src="https://picsum.photos/..."</code> menjadi <code>src="../assets/namafoto.jpg"</code>.<br>
+            4. Untuk tambah foto baru, duplikat satu blok <code>&lt;figure class="doc-card"&gt;...&lt;/figure&gt;</code> dan ubah isinya. Tidak perlu ubah CSS.
+          </p>
+        </div>
+        <div class="upload-guide__icon">🖼️</div>
+      </div>
+
+      <div style="text-align:center; margin-top:28px;">
+        <a href="../index.html" style="display:inline-block; font-size:0.86rem; font-weight:600; color:var(--brown-dark); border:1px solid var(--border); background:var(--white); padding:10px 22px; border-radius:100px;">← Kembali ke Beranda</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">2026 Kopken Holic. Dibuat dengan semangat dan kafein.</div>
+        <div class="footer__links">
+          <a href="../index.html#tentang">Tentang</a>
+          <a href="../index.html#alasan">Kenapa</a>
+          <a href="../index.html#menu">Menu</a>
+          <a href="gallery.html">Galeri</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__content" role="dialog" aria-modal="true">
+      <div class="lightbox__media">
+        <img id="lightboxImg" src="" alt="">
+      </div>
+      <div class="lightbox__info">
+        <button class="lightbox__close" id="lightboxClose">✕ Tutup</button>
+        <span id="lightboxBadge" class="doc-card__badge" style="position:static; display:inline-block; width:fit-content;"></span>
+        <h3 id="lightboxTitle" style="font-size:1.05rem; font-weight:700; color:var(--text-dark);"></h3>
+        <p id="lightboxMeta" style="font-size:0.8rem; color:var(--brown-medium); font-weight:500;"></p>
+        <p id="lightboxDesc" style="font-size:0.86rem; color:var(--text-muted); line-height:1.7;"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Filter
+    const btns = document.querySelectorAll('.gallery-filter__btn');
+    const cards = document.querySelectorAll('.doc-card');
+    const countEl = document.getElementById('galleryCount');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => { b.classList.remove('is-active'); b.setAttribute('aria-selected','false'); });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected','true');
+        const f = btn.dataset.filter;
+        let visible = 0;
+        cards.forEach(c => {
+          const show = f === 'all' || c.dataset.category === f;
+          c.style.display = show ? '' : 'none';
+          if (show) visible++;
+        });
+        countEl.textContent = `Menampilkan ${visible} foto` + (f !== 'all' ? ` • ${btn.textContent.trim()}` : '');
+      });
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+    const lbBadge = document.getElementById('lightboxBadge');
+    const lbTitle = document.getElementById('lightboxTitle');
+    const lbMeta = document.getElementById('lightboxMeta');
+    const lbDesc = document.getElementById('lightboxDesc');
+    const lbClose = document.getElementById('lightboxClose');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const img = card.querySelector('img');
+        if (!img) return;
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lbBadge.textContent = card.querySelector('.doc-card__badge').textContent;
+        lbTitle.textContent = card.querySelector('.doc-card__title').textContent;
+        lbMeta.textContent = card.querySelector('.doc-card__meta').textContent;
+        lbDesc.textContent = card.querySelector('.doc-card__desc').textContent;
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLb(){
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+    lbClose.addEventListener('click', closeLb);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLb(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
+  </script>
+</body>
+</html>

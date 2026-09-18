@@ -1,0 +1,377 @@
+/* ===== GALLERY PAGE — harmonis dengan style.css ===== */
+
+/* Gallery Hero (mirip .hero tapi lebih compact) */
+.gallery-hero {
+  padding: 120px 0 56px;
+  text-align: center;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.gallery-hero__eyebrow {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brown-medium);
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.gallery-hero__title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.8px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.gallery-hero__title em {
+  font-style: normal;
+  color: var(--brown-medium);
+}
+
+.gallery-hero__subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto 10px;
+  line-height: 1.75;
+}
+
+.gallery-hero__hint {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: var(--cream);
+  border: 1px dashed var(--border);
+  border-radius: 100px;
+  padding: 8px 14px;
+}
+
+/* Filter */
+.gallery-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.gallery-filter__btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.gallery-filter__btn:hover {
+  border-color: var(--brown-light);
+  color: var(--brown-dark);
+}
+
+.gallery-filter__btn.is-active {
+  background: var(--brown-dark);
+  border-color: var(--brown-dark);
+  color: var(--white);
+}
+
+/* Section wrapper */
+.gallery-section {
+  padding: 48px 0 80px;
+}
+
+.gallery-section__head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.gallery-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Grid */
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+/* Card */
+.doc-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.22s, transform 0.22s, border-color 0.22s;
+  cursor: pointer;
+}
+
+.doc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: #DDD2C5;
+}
+
+.doc-card__thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--cream);
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Placeholder style kalau img belum diganti — tetap terlihat rapi */
+.doc-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s;
+}
+
+.doc-card:hover .doc-card__thumb img {
+  transform: scale(1.04);
+}
+
+/* Jika user belum upload, div placeholder ini akan kelihatan */
+.doc-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  background: repeating-linear-gradient(135deg, var(--cream), var(--cream) 12px, #F1E8DD 12px, #F1E8DD 24px);
+  color: var(--text-muted);
+}
+
+.doc-card__placeholder-inner {
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.doc-card__placeholder-inner strong {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--brown-medium);
+  margin-bottom: 2px;
+}
+
+.doc-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--brown-dark);
+  background: rgba(255,255,255,0.92);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+
+.doc-card__body {
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.doc-card__title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.doc-card__meta {
+  font-size: 0.74rem;
+  color: var(--brown-medium);
+  font-weight: 500;
+}
+
+.doc-card__desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-top: 4px;
+}
+
+/* Helper callout cara upload */
+.upload-guide {
+  margin-top: 40px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 22px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.upload-guide__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.upload-guide__desc {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.upload-guide__desc code {
+  font-size: 0.78rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 6px;
+  color: var(--brown-medium);
+}
+
+.upload-guide__icon {
+  font-size: 1.8rem;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 24, 16, 0.78);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  z-index: 200;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__content {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 860px;
+  width: 100%;
+  max-height: 90vh;
+  display: grid;
+  grid-template-columns: 1.45fr 0.9fr;
+}
+
+.lightbox__media {
+  background: var(--cream);
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+}
+
+.lightbox__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 90vh;
+}
+
+.lightbox__info {
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lightbox__close {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text-muted);
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.lightbox__close:hover {
+  color: var(--brown-dark);
+  border-color: var(--brown-light);
+}
+
+/* Active nav state */
+.navbar__links a.is-active {
+  color: var(--brown-dark);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .doc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lightbox__content {
+    grid-template-columns: 1fr;
+  }
+  .lightbox__media {
+    max-height: 44vh;
+  }
+  .upload-guide {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-hero__title {
+    font-size: 1.9rem;
+  }
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-section {
+    padding: 32px 0 64px;
+  }
+}
