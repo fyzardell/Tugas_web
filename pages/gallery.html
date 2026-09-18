@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/gallery.css">
 </head>
+
 <body>
 
   <!-- Navbar: Home + Gallery -->
@@ -47,55 +49,55 @@
         <!-- GANTI GAMBAR: ubah src di bawah dengan foto kamu, contoh: src="../assets/foto1.jpg" -->
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken1/800/600" alt="Dokumentasi 1" loading="lazy">
+            <img src="../assets/gambar_7.png" alt="Dokumentasi 1" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken2/800/600" alt="Dokumentasi 2" loading="lazy">
+            <img src="../assets/gambar_8.png" alt="Dokumentasi 2" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken3/800/600" alt="Dokumentasi 3" loading="lazy">
+            <img src="../assets/gambar_9.png" alt="Dokumentasi 3" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken4/800/600" alt="Dokumentasi 4" loading="lazy">
+            <img src="../assets/gambar_1.png" alt="Dokumentasi 4" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken5/800/600" alt="Dokumentasi 5" loading="lazy">
+            <img src="../assets/gambar_2.png" alt="Dokumentasi 5" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken6/800/600" alt="Dokumentasi 6" loading="lazy">
+            <img src="../assets/gambar_3.png" alt="Dokumentasi 6" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken7/800/600" alt="Dokumentasi 7" loading="lazy">
+            <img src="../assets/gambar_4.png" alt="Dokumentasi 7" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken8/800/600" alt="Dokumentasi 8" loading="lazy">
+            <img src="../assets/gambar_5.png" alt="Dokumentasi 8" loading="lazy">
           </div>
         </figure>
 
         <figure class="doc-card">
           <div class="doc-card__thumb">
-            <img src="https://picsum.photos/seed/kopken9/800/600" alt="Dokumentasi 9" loading="lazy">
+            <img src="../assets/gambar_6.png" alt="Dokumentasi 9" loading="lazy">
           </div>
         </figure>
 
@@ -141,14 +143,14 @@
         lbImg.src = img.src;
         lbImg.alt = img.alt;
         lightbox.classList.add('is-open');
-        lightbox.setAttribute('aria-hidden','false');
+        lightbox.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
       });
     });
 
-    function closeLb(){
+    function closeLb() {
       lightbox.classList.remove('is-open');
-      lightbox.setAttribute('aria-hidden','true');
+      lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
     }
     lbClose.addEventListener('click', closeLb);
@@ -156,4 +158,5 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
   </script>
 </body>
+
 </html>
