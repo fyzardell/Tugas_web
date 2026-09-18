@@ -1,0 +1,300 @@
+/* ===== DEVELOPER PAGE — Harmonis dengan style.css ===== */
+
+.dev-hero {
+  padding: 120px 0 48px;
+  text-align: center;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.dev-hero__eyebrow {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brown-medium);
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.dev-hero__title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.8px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.dev-hero__title em {
+  font-style: normal;
+  color: var(--brown-medium);
+}
+
+.dev-hero__subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* Section */
+.dev-section {
+  padding: 56px 0 80px;
+}
+
+/* Developer Grid */
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.dev-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(74, 44, 23, 0.1);
+  border-color: #D8CCC0;
+}
+
+/* Photo Wrapper */
+.dev-card__photo-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 3px solid var(--cream);
+  box-shadow: 0 4px 14px rgba(74, 44, 23, 0.12);
+  background: linear-gradient(135deg, #F5EFE8 0%, #E8DDD4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dev-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.dev-card:hover .dev-card__photo {
+  transform: scale(1.05);
+}
+
+/* Placeholder Avatar with Initials */
+.dev-card__initials {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--brown-medium);
+  letter-spacing: 1px;
+}
+
+.dev-card__badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brown-medium);
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.dev-card__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.dev-card__role {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--brown-accent);
+  margin-bottom: 14px;
+}
+
+.dev-card__desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.dev-card__meta {
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dev-card__meta span:first-child {
+  font-weight: 600;
+  color: var(--brown-dark);
+}
+
+/* Project Assignment Banner */
+.project-banner {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.project-banner__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brown-medium);
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 4px 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.project-banner__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.project-banner__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.project-banner__info-box {
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.project-banner__info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.project-banner__info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-banner__info-item:first-child {
+  padding-top: 0;
+}
+
+.project-banner__info-item .info-label {
+  color: var(--text-muted);
+}
+
+.project-banner__info-item .info-val {
+  font-weight: 600;
+  color: var(--brown-dark);
+  text-align: right;
+}
+
+/* Actions Row */
+.dev-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dev-back-btn {
+  display: inline-block;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--brown-dark);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.dev-back-btn:hover {
+  background-color: var(--cream);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .dev-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-banner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-hero {
+    padding: 100px 0 36px;
+  }
+
+  .dev-hero__title {
+    font-size: 2.1rem;
+  }
+
+  .dev-actions {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .dev-actions a {
+    text-align: center;
+  }
+}
