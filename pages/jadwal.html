@@ -1,57 +1,196 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <title>Jadwal Pelajaran - Kopk3n_holic</title>
-  <link href="jadwal.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kuliah — Kopken Holic</title>
+  <meta name="description" content="Jadwal Mata Kuliah dan Rutinitas Komunitas Kopken Holic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/jadwal.css">
 </head>
+
 <body>
-  <header>
-    <h1>Kopk3n_holic</h1>
-    <nav>
-      <ul>
-        <li><a href="jadwal.html">Jadwal</a></li>
-        <li><a href="galeri.html">Galeri Foto</a></li>
-        <li><a href="anggota.html">Profil Kelompok</a></li>
-        <li><a href="index.html">Keluar</a></li>
-      </ul>
-    </nav>
+
+  <!-- Navbar: Home + Jadwal + Gallery -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar__logo">
+        <img src="../Logo/LogoKopkenHolic.png" alt="Kopken Holic" height="40">
+      </a>
+      <div class="navbar__links">
+        <a href="../index.html">Home</a>
+        <a href="jadwal.html" class="is-active">Jadwal</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jadwal Hero -->
+  <header class="jadwal-hero">
+    <div class="container">
+      <div class="jadwal-hero__eyebrow">Rutinitas Komunitas</div>
+      <h1 class="jadwal-hero__title">Jadwal <em>Mata Kuliah</em></h1>
+      <p class="jadwal-hero__subtitle">
+        Agenda perkuliahan rutin mingguan anggota Kopken Holic. Sebelum dan sesudah kelas, kumpulnya tetap di Kopi Kenangan!
+      </p>
+    </div>
   </header>
 
-  <main>
-    <h2>Jadwal Mata Kuliah</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-      <caption>Jadwal Rutin Mingguan</caption>
-      <thead>
-        <tr>
-          <th scope="col">Jam</th>
-          <th scope="col">Senin</th>
-          <th scope="col">Selasa</th>
-          <th scope="col">Rabu</th>
-          <th scope="col">Kamis</th>
-          <th scope="col">Jumat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">07.30 - 10.00</th>
-          <td>Pancasila</td>
-          <td>Pemrograman Web</td>
-          <td>Desain &amp; Analisis Algoritma</td>
-          <td>Pengantar Kecerdasan Artificial</td>
-          <td>Sistem Operasi</td>
-        </tr>
-       
-        <tr>
-          <th scope="row">10.00 - 12.00</th>
-          <td>Jaringan Komputer</td>
-          <td>Sistem Basis Data</td>
-          <td>Studi Kebantenan</td>
-          <td>Internet of Things</td>
-          <td>Jaringan Komputer</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- Jadwal Content -->
+  <main class="jadwal-section">
+    <div class="container">
+
+      <!-- Table Card Wrapper -->
+      <div class="jadwal-card">
+        <div class="jadwal-card__header">
+          <div>
+            <span class="jadwal-card__tag">Semester Aktif</span>
+            <h2 class="jadwal-card__title">Jadwal Rutin Mingguan</h2>
+          </div>
+          <div class="jadwal-card__note">
+            Senin &ndash; Jumat &bull; Sesi Pagi &amp; Siang
+          </div>
+        </div>
+
+        <div class="jadwal-table-container">
+          <table class="jadwal-table">
+            <thead>
+              <tr>
+                <th scope="col" class="th-time">Jam</th>
+                <th scope="col">Senin</th>
+                <th scope="col">Selasa</th>
+                <th scope="col">Rabu</th>
+                <th scope="col">Kamis</th>
+                <th scope="col">Jumat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="td-time">
+                  <span class="time-badge">07.30 - 10.00</span>
+                </th>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Pancasila</span>
+                    <span class="matkul-badge">Sesi Pagi</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Pemrograman Web</span>
+                    <span class="matkul-badge">Praktikum</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Desain &amp; Analisis Algoritma</span>
+                    <span class="matkul-badge">Teori</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Pengantar Kecerdasan Artificial</span>
+                    <span class="matkul-badge">Teori</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Sistem Operasi</span>
+                    <span class="matkul-badge">Praktikum</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="td-time">
+                  <span class="time-badge">10.00 - 12.00</span>
+                </th>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Jaringan Komputer</span>
+                    <span class="matkul-badge">Teori</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Sistem Basis Data</span>
+                    <span class="matkul-badge">Praktikum</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Studi Kebantenan</span>
+                    <span class="matkul-badge">Kuliah Umum</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Internet of Things</span>
+                    <span class="matkul-badge">Praktikum</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="matkul-cell">
+                    <span class="matkul-name">Jaringan Komputer</span>
+                    <span class="matkul-badge">Praktikum</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="jadwal-card__footer">
+          <p>* Selesai kelas jam 12.00 langsung meluncur ke Kopi Kenangan terdekat untuk nugas &amp; diskusi bareng.</p>
+        </div>
+      </div>
+
+      <!-- Quick Info Cards -->
+      <div class="jadwal-info-grid">
+        <div class="jadwal-info-card">
+          <div class="jadwal-info-num">01</div>
+          <div class="jadwal-info-title">Sesi Pagi (07.30 - 10.00)</div>
+          <p class="jadwal-info-desc">Mata kuliah pembuka hari. Cocok ditemani Americano atau Kopi Kenangan Mantan sebelum masuk kelas.</p>
+        </div>
+        <div class="jadwal-info-card">
+          <div class="jadwal-info-num">02</div>
+          <div class="jadwal-info-title">Sesi Siang (10.00 - 12.00)</div>
+          <p class="jadwal-info-desc">Mata kuliah inti dan praktikum lab. Diskusi tugas besar biasanya lanjut dibahas saat sesi nugas.</p>
+        </div>
+        <div class="jadwal-info-card">
+          <div class="jadwal-info-num">03</div>
+          <div class="jadwal-info-title">Agenda Nugas Bareng</div>
+          <p class="jadwal-info-desc">Setiap hari setelah jam 12.00 atau jam kosong, anggota Kopken Holic otomatis kumpul di meja pojok Kenangan.</p>
+        </div>
+      </div>
+
+      <!-- Action Navigation -->
+      <div class="jadwal-actions">
+        <a href="../index.html" class="jadwal-back-btn">&larr; Kembali ke Beranda</a>
+        <a href="gallery.html" class="hero__cta">Lihat Momen di Galeri &rarr;</a>
+      </div>
+
+    </div>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">2026 Kopken Holic. Dibuat dengan semangat dan kafein.</div>
+        <div class="footer__links">
+          <a href="../index.html">Home</a>
+          <a href="jadwal.html">Jadwal</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>

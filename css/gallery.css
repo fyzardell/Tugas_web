@@ -137,10 +137,21 @@
   background: rgba(255,255,255,0.22);
 }
 
-/* Active nav */
-.navbar__links a.is-active {
-  color: var(--brown-dark);
+/* Back button */
+.gallery-back {
+  display: inline-block;
+  font-size: 0.86rem;
   font-weight: 600;
+  color: var(--brown-dark);
+  border: 1px solid var(--border);
+  background: var(--white);
+  padding: 10px 22px;
+  border-radius: 100px;
+  transition: background-color 0.2s;
+}
+
+.gallery-back:hover {
+  background-color: var(--cream);
 }
 
 /* Responsive */
