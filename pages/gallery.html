@@ -24,12 +24,75 @@
       </a>
       <div class="navbar__links">
         <a href="../index.html">Home</a>
-        <a href="jadwal.html">College Schedule</a>
+        <a href="jadwal.html">Schedule</a>
         <a href="gallery.html" class="is-active">Gallery</a>
         <a href="developer.html">Developer</a>
       </div>
+      <!-- Hamburger Toggle Button -->
+      <button class="navbar__hamburger" id="navToggle" aria-label="Buka Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Fullscreen Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__header">
+      <a href="../index.html" class="mobile-menu__logo">
+        <img src="../Logo/LogoKopkenHolic.png" alt="Kopken Holic" height="38">
+      </a>
+      <button class="mobile-menu__close" id="menuCloseBtn" aria-label="Tutup Menu">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="mobile-menu__body">
+      <span class="mobile-menu__eyebrow">Navigasi Komunitas</span>
+      <ul class="mobile-menu__links">
+        <li class="mobile-menu__item">
+          <a href="../index.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">01</span>
+              <span>Home</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="jadwal.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">02</span>
+              <span>Schedule</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="gallery.html" class="mobile-menu__link is-active">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">03</span>
+              <span>Gallery</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="developer.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">04</span>
+              <span>Developer</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu__footer">
+      <p class="mobile-menu__quote">&ldquo;Ngopi, Belajar, Nugas. Ulangi Setiap Hari.&rdquo;</p>
+      <span class="mobile-menu__copyright">&copy; 2026 Kopken Holic. All rights reserved.</span>
+    </div>
+  </div>
 
   <!-- Gallery Hero -->
   <header class="gallery-hero">
@@ -159,6 +222,7 @@
     lightbox.addEventListener('click', (e) => { if (e.target === lightbox || e.target === lbImg) closeLb(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
   </script>
+  <script src="../js/navbar.js"></script>
 </body>
 
 </html>
