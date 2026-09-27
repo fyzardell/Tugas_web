@@ -24,12 +24,75 @@
       </a>
       <div class="navbar__links">
         <a href="../index.html">Home</a>
-        <a href="jadwal.html">College Schedule</a>
+        <a href="jadwal.html">Schedule</a>
         <a href="gallery.html">Gallery</a>
         <a href="developer.html" class="is-active">Developer</a>
       </div>
+      <!-- Hamburger Toggle Button -->
+      <button class="navbar__hamburger" id="navToggle" aria-label="Buka Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Fullscreen Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__header">
+      <a href="../index.html" class="mobile-menu__logo">
+        <img src="../Logo/LogoKopkenHolic.png" alt="Kopken Holic" height="38">
+      </a>
+      <button class="mobile-menu__close" id="menuCloseBtn" aria-label="Tutup Menu">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="mobile-menu__body">
+      <span class="mobile-menu__eyebrow">Navigasi Komunitas</span>
+      <ul class="mobile-menu__links">
+        <li class="mobile-menu__item">
+          <a href="../index.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">01</span>
+              <span>Home</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="jadwal.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">02</span>
+              <span>Schedule</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="gallery.html" class="mobile-menu__link">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">03</span>
+              <span>Gallery</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="developer.html" class="mobile-menu__link is-active">
+            <span class="mobile-menu__link-left">
+              <span class="mobile-menu__num">04</span>
+              <span>Developer</span>
+            </span>
+            <span class="mobile-menu__arrow">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu__footer">
+      <p class="mobile-menu__quote">&ldquo;Ngopi, Belajar, Nugas. Ulangi Setiap Hari.&rdquo;</p>
+      <span class="mobile-menu__copyright">&copy; 2026 Kopken Holic. All rights reserved.</span>
+    </div>
+  </div>
 
   <!-- Developer Hero -->
   <header class="dev-hero">
@@ -37,7 +100,8 @@
       <div class="dev-hero__eyebrow">Tim Pengembang</div>
       <h1 class="dev-hero__title">Developer <em>Kopken Holic</em></h1>
       <p class="dev-hero__subtitle">
-        Kenalan dengan tim di balik pembuatan website Kopken Holic. Project ini dirancang dan dikembangkan dengan kafein dan semangat kolaborasi.
+        Kenalan dengan tim di balik pembuatan website Kopken Holic. Project ini dirancang dan dikembangkan dengan kafein
+        dan semangat kolaborasi.
       </p>
     </div>
   </header>
@@ -53,15 +117,16 @@
         <article class="dev-card">
           <div class="dev-card__photo-wrapper">
             <!-- GANTI FOTO: Ganti src di bawah ini dengan file foto kamu (misal: src="../assets/faeyza.jpg") -->
-            <img src="https://ui-avatars.com/api/?name=Faeyza+Ardellein&background=4A2C17&color=FAF8F5&size=256&bold=true" 
-                 alt="Faeyza Ardellein Yaradhitya" 
-                 class="dev-card__photo">
+            <img
+              src="https://ui-avatars.com/api/?name=Faeyza+Ardellein&background=4A2C17&color=FAF8F5&size=256&bold=true"
+              alt="Faeyza Ardellein Yaradhitya" class="dev-card__photo">
           </div>
           <span class="dev-card__badge">Developer 01</span>
           <h2 class="dev-card__name">Faeyza Ardellein Yaradhitya</h2>
           <div class="dev-card__role">Frontend Developer &amp; UI Lead</div>
           <p class="dev-card__desc">
-            Bertanggung jawab atas arsitektur halaman web, konsistensi desain antarmuka, serta integrasi komponen visual komunitas Kopken Holic.
+            Bertanggung jawab atas arsitektur halaman web, konsistensi desain antarmuka, serta integrasi komponen visual
+            komunitas Kopken Holic.
           </p>
           <div class="dev-card__meta">
             <span>Status</span>
@@ -73,15 +138,15 @@
         <article class="dev-card">
           <div class="dev-card__photo-wrapper">
             <!-- GANTI FOTO: Ganti src di bawah ini dengan file foto kamu (misal: src="../assets/dian.jpg") -->
-            <img src="https://ui-avatars.com/api/?name=Dian+Rahmawati&background=6B4226&color=FAF8F5&size=256&bold=true" 
-                 alt="Dian Rahmawati" 
-                 class="dev-card__photo">
+            <img src="https://ui-avatars.com/api/?name=Dian+Rahmawati&background=6B4226&color=FAF8F5&size=256&bold=true"
+              alt="Dian Rahmawati" class="dev-card__photo">
           </div>
           <span class="dev-card__badge">Developer 02</span>
           <h2 class="dev-card__name">Dian Rahmawati</h2>
           <div class="dev-card__role">UI/UX Designer &amp; Content</div>
           <p class="dev-card__desc">
-            Merancang tata letak yang ramah pengguna, menyusun dokumentasi galeri kegiatan, serta kurasi konten estetika komunitas.
+            Merancang tata letak yang ramah pengguna, menyusun dokumentasi galeri kegiatan, serta kurasi konten estetika
+            komunitas.
           </p>
           <div class="dev-card__meta">
             <span>Status</span>
@@ -93,15 +158,15 @@
         <article class="dev-card">
           <div class="dev-card__photo-wrapper">
             <!-- GANTI FOTO: Ganti src di bawah ini dengan file foto kamu (misal: src="../assets/firdy.jpg") -->
-            <img src="https://ui-avatars.com/api/?name=Firdy+Ridho&background=8B6914&color=FAF8F5&size=256&bold=true" 
-                 alt="Firdy Ridho Fillah" 
-                 class="dev-card__photo">
+            <img src="https://ui-avatars.com/api/?name=Firdy+Ridho&background=8B6914&color=FAF8F5&size=256&bold=true"
+              alt="Firdy Ridho Fillah" class="dev-card__photo">
           </div>
           <span class="dev-card__badge">Developer 03</span>
           <h2 class="dev-card__name">Firdy Ridho Fillah</h2>
           <div class="dev-card__role">Frontend Developer &amp; QA</div>
           <p class="dev-card__desc">
-            Mengoptimalkan responsivitas layout antar perangkat, validasi struktur kode HTML/CSS, dan struktur jadwal rutinitas kuliah.
+            Mengoptimalkan responsivitas layout antar perangkat, validasi struktur kode HTML/CSS, dan struktur jadwal
+            rutinitas kuliah.
           </p>
           <div class="dev-card__meta">
             <span>Status</span>
@@ -117,7 +182,9 @@
           <span class="project-banner__label">Akademik Project</span>
           <h3 class="project-banner__title">Dibuat untuk Tugas Pemrograman Web</h3>
           <p class="project-banner__desc">
-            Website Kopken Holic ini dikembangkan sebagai pemenuhan <strong>Tugas Mata Kuliah Pemrograman Web</strong>. Website dibangun menggunakan HTML5 semantik dan styling CSS modern yang terstruktur, rapi, dan sepenuhnya responsif di berbagai perangkat tanpa ketergantungan library eksternal yang berat.
+            Website Kopken Holic ini dikembangkan sebagai pemenuhan <strong>Tugas Mata Kuliah Pemrograman Web</strong>.
+            Website dibangun menggunakan HTML5 semantik dan styling CSS modern yang terstruktur, rapi, dan sepenuhnya
+            responsif di berbagai perangkat tanpa ketergantungan library eksternal yang berat.
           </p>
         </div>
         <div class="project-banner__info-box">
@@ -164,6 +231,7 @@
     </div>
   </footer>
 
+  <script src="../js/navbar.js"></script>
 </body>
 
 </html>

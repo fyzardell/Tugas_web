@@ -279,6 +279,11 @@
   background-color: var(--cream);
 }
 
+/* ===== JADWAL MOBILE VERTICAL LIST ===== */
+.jadwal-mobile-list {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .jadwal-info-grid {
@@ -302,10 +307,104 @@
     align-items: flex-start;
   }
 
-  .jadwal-table thead th,
-  .jadwal-table tbody td,
-  .jadwal-table tbody th.td-time {
-    padding: 14px 12px;
+  /* Sembunyikan tabel horizontal pada mobile, ganti dengan list memanjang ke bawah */
+  .jadwal-table-container {
+    display: none;
+  }
+
+  .jadwal-mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px;
+    background-color: #FAF8F5;
+  }
+
+  .jadwal-day-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(74, 44, 23, 0.04);
+  }
+
+  .jadwal-day-card__header {
+    background: linear-gradient(135deg, #F8F3ED 0%, #EFE7DC 100%);
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    border-left: 5px solid var(--brown-medium);
+  }
+
+  .jadwal-day-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--brown-dark);
+    letter-spacing: -0.2px;
+  }
+
+  .jadwal-day-count {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--brown-accent);
+    background-color: var(--white);
+    padding: 3px 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(139, 105, 20, 0.2);
+  }
+
+  .jadwal-day-card__body {
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .jadwal-day-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--border);
+  }
+
+  .jadwal-day-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .jadwal-item-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--brown-medium);
+    background-color: #FAF4EC;
+    padding: 4px 10px;
+    border-radius: 6px;
+    align-self: flex-start;
+    border: 1px solid rgba(210, 180, 140, 0.35);
+  }
+
+  .jadwal-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .jadwal-item-content .matkul-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.35;
+  }
+
+  .jadwal-item-content .matkul-badge {
+    flex-shrink: 0;
   }
 
   .jadwal-actions {
